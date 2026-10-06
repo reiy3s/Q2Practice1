@@ -3,4 +3,4 @@
 
 x = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 del x[3] # delete by index, deletes Thursday
-display (x)
+display(x)
