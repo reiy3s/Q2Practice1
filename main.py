@@ -3,6 +3,8 @@ from pyscript import display, document
 # tuple: immutable
 # list: mutable, may be mixed ; convert using list(); .append() to add at end; .insert() add to specific index; NOT REPLACING VALUE, REPLACE INDEX / POSITION
 
+# --------------------------------------------------------------------->>
+
 days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
 #del days[3] # delete by index, deletes Thursday
@@ -60,8 +62,30 @@ dog.add("Japanese Spitz") # add new value to set
 
 display(dog)
 
+sample_set = {"Mikmikk"}
+
+display(type(sample_set)) # returns <class 'dict'>
+
 # --------------------------------------------------------------------->>
 
-sample_set = {}
+#set operators
 
-display(type(sample_set)) # returns <class 'dict'>, not set
+#union via | operator or a.union(b) method <<<<<< adds everything
+
+a = {'soda', 'candy', 'chocolate', 'cookies'}
+b = {'chocolate', 'burger', 'nuggets', 'cookies'}
+c = {'shawarma', 'quesadilla', 'soda'}
+
+display (a | b | c) # can also be (a.union(b,c))
+
+#intersection via & or .intersection() method <<<<<< only gets similar values
+
+display (a & b & c) # can also be (a.intersection(b,c))
+
+#difference via - or .difference() method <<<<<< gets values in a that are not in b or c
+
+display (a - b - c) # can also be (a.difference(b,c))
+
+#symmetric difference via ^ or .symmetric_difference() method <<<<<< gets values that in both sets except the common values
+
+display (a ^ b ^ c) # can also be (a.symmetric_difference(b,c))
