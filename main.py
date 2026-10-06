@@ -1,3 +1,5 @@
+from pyscript import display, document
+
 # tuple: immutable
 # list: mutable, may be mixed ; convert using list(); .append() to add at end; .insert() add to specific index; NOT REPLACING VALUE, REPLACE INDEX / POSITION
 
