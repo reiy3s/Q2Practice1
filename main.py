@@ -3,4 +3,4 @@
 
 days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 del days[3] # delete by index, deletes Thursday
-print(days)
+display(days)
