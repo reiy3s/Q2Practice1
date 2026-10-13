@@ -64,7 +64,7 @@ display(dog)
 
 sample_set = {"Mikmikk"}
 
-display(type(sample_set)) # returns <class 'dict'>
+display(type(sample_set)) # returns <class 'dict'> if no value in sample_set
 
 # --------------------------------------------------------------------->>
 
