@@ -94,13 +94,22 @@ display (a ^ b ^ c) # can also be (a.symmetric_difference(b,c))
 
 #set inclusions and superset relations
 
+#SUBSET
 #set_1 = {"fries", "burger"}
 #set_2 = {"fries", "burger", "coke", "applepie"}
 
 #display(set_1.issubset(set_2)) # returns True if set 1 is a subset of set 2
 #set 1 is less than set 2 >> set 1 is a subset of set 2 >> output is true
 
-set_1 = {"fries", "burger"}
-set_2 = {"fries", "burger", "coke", "applepie"}
 
-display(set_1 < set_2)
+#PROPER SUBSET
+#set_1 = {"fries", "burger"}
+#set_2 = {"fries", "burger", "coke", "applepie"}
+
+#display(set_1 < set_2) # returns True if set 1 is a proper subset of set 2
+# everything in set 1 is in set 2 but not everything in set 2 is in set 1 >> output is true
+
+set_1 = {"fries", "burger"}
+set_2 = {"fries", "burger"}
+
+display(set_1 < set_2) # returns True if set 1 is a proper subset of set 2
