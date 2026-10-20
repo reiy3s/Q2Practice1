@@ -112,4 +112,4 @@ display (a ^ b ^ c) # can also be (a.symmetric_difference(b,c))
 set_1 = {"fries", "burger"}
 set_2 = {"fries", "burger"}
 
-display(set_1 < set_2) # returns True if set 1 is a proper subset of set 2
+display(set_1 < set_2) # returns False since set 1 is equal to set 2 (set 2 must be set 1 and MORE)
