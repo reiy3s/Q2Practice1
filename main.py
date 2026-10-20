@@ -86,6 +86,21 @@ display (a & b & c) # can also be (a.intersection(b,c))
 
 display (a - b - c) # can also be (a.difference(b,c))
 
-#symmetric difference via ^ or .symmetric_difference() method <<<<<< gets values that in both sets except the common values
+#symmetric difference via ^ or .symmetric_difference() method <<<<<< gets values that in both sets except the common values / unique values only
 
 display (a ^ b ^ c) # can also be (a.symmetric_difference(b,c))
+
+# --------------------------------------------------------------------->>
+
+#set inclusions and superset relations
+
+#set_1 = {"fries", "burger"}
+#set_2 = {"fries", "burger", "coke", "applepie"}
+
+#display(set_1.issubset(set_2)) # returns True if set 1 is a subset of set 2
+#set 1 is less than set 2 >> set 1 is a subset of set 2 >> output is true
+
+set_1 = {"fries", "burger"}
+set_2 = {"fries", "burger", "coke", "applepie"}
+
+display(set_1 < set_2)
