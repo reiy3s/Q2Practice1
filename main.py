@@ -99,6 +99,7 @@ display (a ^ b ^ c) # can also be (a.symmetric_difference(b,c))
 #set_2 = {"fries", "burger", "coke", "applepie"}
 
 #display(set_1.issubset(set_2)) # returns True if set 1 is a subset of set 2
+    # can be set 1 <= set 2
 #set 1 is less than set 2 >> set 1 is a subset of set 2 >> output is true
 
 
@@ -109,7 +110,42 @@ display (a ^ b ^ c) # can also be (a.symmetric_difference(b,c))
 #display(set_1 < set_2) # returns True if set 1 is a proper subset of set 2
 # everything in set 1 is in set 2 but not everything in set 2 is in set 1 >> output is true
 
+#set_1 = {"fries", "burger"}
+#set_2 = {"fries", "burger", "coke", "applepie"}
+
+#display(set_1 < set_2) # returns True since set 1 is a proper subset of set 2
+# returns False if set 1 is equal to set 2 (set 2 must be set 1 and MORE)
+
+
+#SUPERSET
+#set_1 = {"fries", "burger"}
+#set_2 = {"fries", "burger", "coke", "applepie"}
+
+#display(set_2.issuperset(set_1)) # returns True if set 1 is a superset of set 2
+# can be set 1 >= set 2
+#set 1 is NOT a superset of set 2 >> output is False
+
+
+#PROPER SUPER SET
 set_1 = {"fries", "burger"}
 set_2 = {"fries", "burger", "coke", "applepie"}
 
-display(set_1 < set_2) # returns False since set 1 is equal to set 2 (set 2 must be set 1 and MORE)
+display(set_2 > set_1) # returns True if set 2 is a proper superset of set 1
+# everything in set 1 is in set 2 but not everything in set 2 is in set 1 >> output is true
+
+
+
+#BASICALLY
+# SUBSET = everything in a is in b
+# PROPER SUBSET = everything in a is in b, b has more
+# SUPERSET = everything in b is in a
+# PROPER SUPERSET = everything in b is in a, b has more
+
+# --------------------------------------------------------------------->>
+
+#FROZEN SETS >> frozenset()
+
+subjs = ["Math", "Science", "Filipino", "ICT"]
+convert_subjs = frozenset(subjs) # converts list to frozenset, immutable
+
+display(convert_subjs)
