@@ -228,5 +228,5 @@ ph = {'Singer': 'Lea Salonga',
 #get()
 display(ph.get('Gymnast'))
 
-#in
+#in to show if value is in the dict
 display('Singer' in ph)
