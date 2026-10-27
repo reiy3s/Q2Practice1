@@ -163,7 +163,7 @@ grades = {'Math':97,
 #set1 = {'s1', 's2'}
 #display (type(set1))
 
-#display(grades)
+#gdisplay(grades)
 #display (type(grades))
 
 # is it indexed? [2]
@@ -174,6 +174,7 @@ display(grades['Math']) # <-- dicts indexed by keys / dicts are keyed ("Math")
 # is it mutable? (3)
 # adding values >> use .add()
 grades['Social Studies'] = 95
+grades['Science'] = 97
 display(grades)
 
 # --------------------------------------------------------------------->>
