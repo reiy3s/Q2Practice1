@@ -157,7 +157,7 @@ display(convert_subjs)
 my_samp_data = {'Math':97,
                 'Science':94,
                 'Filipino':92,
-                'Filipino':98}
+                'Filipino':98} #<-- shows most recent input if same key
 
 set1 = {'s1', 's2'}
 
