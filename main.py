@@ -171,7 +171,16 @@ display(my_samp_data)
 display(my_samp_data['Math']) # <-- dicts indexed by keys / dicts are keyed ("Math")
 #display(my_samp_data['math']) # <-- case sensitive
 
-#use dict() function to convert, needs double input stuff like {'a, b', 'c, d'}
+#use dict() function to convert, needs double input stuff like {'ab', 'cd'}
 
-a = ('ax', 'by')
-display(dict(a))
+a = ('ab', 'xy') # <-- cant be ('a', 'x') or ('abc', 'xyz') cuz element has a length of 1 / 3 (not the double input stuff); needs to be ONLY 2
+display(dict(a)) # <-- displays {'a': 'x', 'b': 'y'}
+
+#use zip() and dict() to combine 2 LISTS into dictionaries (convert then zip)
+
+info1 = ['First Name', 'Last Name', 'Category']
+info2 = ['Mikmikk', 'the Cow', 'Stuffy']
+info3 = dict(zip(info1, info2))
+
+display(info3) #this OR display(dict(zip(info1, info2)))
+
