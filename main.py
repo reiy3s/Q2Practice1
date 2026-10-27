@@ -155,10 +155,10 @@ display(convert_subjs)
 #DICTIONARIES >>> stores key-value pairs, (1) unique keys (dupe values), values can be any data type, (3) mutable
 # prove unique keys (1)
 grades = {'Math':97,
-                'Science':94,
-                'Filipino':92,
-                'Filipino':98, #<-- shows most recent input if same key
-                'PE':94}
+        'Science':94,
+        'Filipino':92,
+        'Filipino':98, #<-- shows most recent input if same key
+        'PE':94}
 
 #set1 = {'s1', 's2'}
 #display (type(set1))
@@ -174,7 +174,10 @@ display(grades['Math']) # <-- dicts indexed by keys / dicts are keyed ("Math")
 # is it mutable? (3)
 # adding values >> use .add()
 grades['Social Studies'] = 95
-grades['Science'] = 97
+grades['Science'] = 97 # <-- changes the value of the key
+
+# deleting values >> use del
+del grades['Filipino']
 display(grades)
 
 # --------------------------------------------------------------------->>
