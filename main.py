@@ -146,6 +146,10 @@ display(set_2 > set_1) # returns True if set 2 is a proper superset of set 1
 #FROZEN SETS >> frozenset()
 
 subjs = ["Math", "Science", "Filipino", "ICT"]
-convert_subjs = frozenset(subjs) # converts list to frozenset, immutable
+convert_subjs = frozenset(subjs) # converts list to frozenset, immutable sets
 
 display(convert_subjs)
+
+# --------------------------------------------------------------------->>
+
+#DICTIONARIES
