@@ -195,3 +195,16 @@ info3 = dict(zip(info1, info2))
 
 display(info3) #this OR display(dict(zip(info1, info2)))
 
+# --------------------------------------------------------------------->>
+
+# use union (|) to merge dictionaries
+
+d1 = {'x':1,
+    'y':2,
+    'z':3}
+d2 = {'a':4,
+    'b':5,
+    'c':6}
+
+d3 = d1 | d2
+display(d3)
