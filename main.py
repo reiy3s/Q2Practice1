@@ -152,9 +152,9 @@ display(convert_subjs)
 
 # --------------------------------------------------------------------->>
 
-#DICTIONARIES >>> stores key-value pairs, (1) unique keys (dupe values), values can be any data type, mutable
+#DICTIONARIES >>> stores key-value pairs, (1) unique keys (dupe values), values can be any data type, (3) mutable
 # prove unique keys (1)
-my_samp_data = {'Math':97,
+grades = {'Math':97,
                 'Science':94,
                 'Filipino':92,
                 'Filipino':98, #<-- shows most recent input if same key
@@ -163,13 +163,20 @@ my_samp_data = {'Math':97,
 #set1 = {'s1', 's2'}
 #display (type(set1))
 
-display(my_samp_data)
-#display (type(my_samp_data))
+#display(grades)
+#display (type(grades))
 
 # is it indexed? [2]
-#display(my_samp_data[0]) <-- dicts not indexed by number
-display(my_samp_data['Math']) # <-- dicts indexed by keys / dicts are keyed ("Math")
-#display(my_samp_data['math']) # <-- case sensitive
+#display(grades[0]) <-- dicts not indexed by number
+display(grades['Math']) # <-- dicts indexed by keys / dicts are keyed ("Math")
+#display(grades['math']) # <-- case sensitive
+
+# is it mutable? (3)
+# adding values >> use .add()
+grades['Social Studies'] = 95
+display(grades)
+
+# --------------------------------------------------------------------->>
 
 #use dict() function to convert, needs double input stuff like {'ab', 'cd'}
 
