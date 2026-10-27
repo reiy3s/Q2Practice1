@@ -152,4 +152,16 @@ display(convert_subjs)
 
 # --------------------------------------------------------------------->>
 
-#DICTIONARIES
+#DICTIONARIES >>> stores key-value pairs, unique keys (dupe values), values can be any data type, mutable
+# prove unique keys
+my_samp_data = {'Math':97,
+                'Science':94,
+                'Filipino':92,
+                'Filipino':98}
+
+set1 = {'s1', 's2'}
+
+display(my_samp_data)
+display (type(my_samp_data))
+
+display (type(set1))
