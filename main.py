@@ -165,3 +165,13 @@ my_samp_data = {'Math':97,
 
 display(my_samp_data)
 #display (type(my_samp_data))
+
+# is it indexed? [2]
+#display(my_samp_data[0]) <-- dicts not indexed by number
+display(my_samp_data['Math']) # <-- dicts indexed by keys / dicts are keyed ("Math")
+#display(my_samp_data['math']) # <-- case sensitive
+
+#use dict() function to convert, needs double input stuff like {'a, b', 'c, d'}
+
+a = ('ax', 'by')
+display(dict(a))
