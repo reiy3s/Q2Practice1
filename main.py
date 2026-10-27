@@ -199,6 +199,7 @@ display(info3) #this OR display(dict(zip(info1, info2)))
 
 # use union (|) to merge dictionaries
 
+# method 1
 d1 = {'x':1,
     'y':2,
     'z':3}
@@ -208,3 +209,24 @@ d2 = {'a':4,
 
 d3 = d1 | d2
 display(d3)
+
+#method 2
+
+#method 3
+d7 = {'TLE':95, 'ICT':92}
+d8 = {'LT':100, 'English':94}
+
+d9 = d7.update(d8)
+display(d9)
+
+# --------------------------------------------------------------------->>
+
+ph = {'Singer': 'Lea Salonga',
+    'Weightlifter': 'Hidilyn Diaz',
+    'Gymnast': 'Carlos Yulo'}
+
+#get()
+display(ph.get('Gymnast'))
+
+#in
+display('Singer' in ph)
